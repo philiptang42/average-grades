@@ -1,0 +1,3 @@
+def average(grades)
+
+end
