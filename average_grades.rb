@@ -11,9 +11,27 @@ def average(grades)
   sum / grades.size.to_f
 end
 
+def letter_grade(average)
+  if average >= 90
+    'A'
+  elsif average >= 80
+    'B'
+  elsif average >= 70
+    'C'
+  elsif average >= 60
+    'D'
+  else
+    'F'
+  end
+end
+
+
 print "Jane's Average Grade: "
-puts average(Jane)
+print average(Jane)
+puts " (" + letter_grade(average(Jane)) + ")"
 print "Samantha's Average Grade: "
-puts average(Samantha)
+print average(Samantha)
+puts " (" + letter_grade(average(Samantha)) + ")"
 print "Matt's Average Grade: "
-puts average(Matt)
+print average(Matt)
+puts " (" + letter_grade(average(Matt)) + ")"
