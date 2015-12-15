@@ -11,6 +11,9 @@ def average(grades)
   sum / grades.size.to_f
 end
 
+print "Jane's Average Grade: "
 puts average(Jane)
+print "Samantha's Average Grade: "
 puts average(Samantha)
+print "Matt's Average Grade: "
 puts average(Matt)
